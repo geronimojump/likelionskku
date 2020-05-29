@@ -1,0 +1,31 @@
+body{
+    background-image:url(back.jpg);
+    background-position: relative;   
+}
+
+.content{
+    border : 5px solid black;
+    position: absolute;
+    height: 30%;
+    width: 50%;
+    top : 35%;
+    left : 25%;
+    text-align: center; 
+}
+.window{
+    height: 80%;
+    border: 5px black solid;
+}
+#w_stopwatch, #w_timer{
+    display: none;
+}
+input[type=number]{
+    width : 50px;
+}
+h1{
+    font-size: 80px;
+    margin: 0px 0px 0px 0px;
+}
+h3{
+    margin: 20px 0px 0px 0px;
+}

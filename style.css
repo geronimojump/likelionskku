@@ -1,110 +1,64 @@
-body{
-    background-color:mistyrose;
-
+body {
+    margin: 0;
+    background-color: beige;
+    font-family: 'Manrope', sans-serif;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Sunflower', sans-serif;
 }
-
-.card{
-    position: relative;
-    font-family: 'Gamja Flower', cursive; font-size: x-large;
+a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    font-size: 45px;
+    font-family: 'Manrope', sans-serif;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Sunflower', sans-serif;
+    text-align: center;
+    border-bottom: 3px solid green;
+    background-color: green;
+    color:yellow;
+    margin: 0;
+    padding: 20px;
+}
+ol {
+    font-family: 'Manrope', sans-serif;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Sunflower', sans-serif;
+    border-right: 3px solid blue;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+}
+#grid {
     display: grid;
-    grid-template-columns: 100px auto 100px;
-    border : 5px solid black;
-    width: 40%;
-    margin-left: 4%;
-    margin-top : 55px;
-    transition : 1s;
-    background-color:plum;
-    border-radius: 30%;
+    grid-template-columns: 200px 1fr;
 }
-
-.card:hover {
-    color: mistyrose;
-    box-shadow: none;
-    background-color: rebeccapurple;
-}   
-
-.card:nth-child(even){
-    margin-left:57%;
+#grid ol {
+    padding-left:33px;
 }
-
-img{
-    height: 100px;
-    width : 100px;
-    position: absolute;
-    border-radius: 30%;
-    top:30px;
+#article {
+    padding-left:25px;
 }
-
-h1{
-    text-align: center;
+h2 {
+    color: black;
+    font-family: 'Manrope', sans-serif;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Sunflower', sans-serif;
 }
-
-.date{
-    grid-column: 2;
-    padding: 5px;
-    text-align: center;
+#title {
+    color: yellow;
 }
-.what{
-    grid-column: 2;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: xx-large;
-    font-weight: 400;
-    padding: 5px;
-    text-align: center;
-}
-.how{
-    grid-column: 2;
-    padding: 5px;
-    text-align: center;
-}
-.where{
-    grid-column: 2;
-    padding: 5px;
-    text-align: center;
-}
-
-#line{
-    position: absolute;
-    width : 10px;
-    height : 200%;
-    background-color: black;
-    top : 87px;
-    left:50%;
-    margin-left:-5px;
+.panel-footer{
+   background-color: green;
+   color : yellow;
+   position : fixed;
+   bottom : 0;
+   width: 85%;
 
 }
-.dot{
-    
-    height: 25px;
-    width : 25px;
-    border-radius: 100%;
-    background-color: black;
-    position: absolute;
-    top: 40%;
-    right: -16.4%;
+#night_day{
+    position : relative;
+    top :-155%;
+    left:96.8%;
 }
-
-#button__top{
-    position : fixed;
-    bottom:0;
-    height:25px;
-}
-
-.card:nth-child(even) .dot{
-    margin-right:132%;
-}
-
-@media(max-width:1200px) {
-.card {
-width: 90%;
-margin-bottom: 60px;
-}
-.card:nth-child(even) {
-margin-left: 4%;
-}
-#line {
-display: none;
-}
-.dot {
-display: none;
-} 

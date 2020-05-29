@@ -1,89 +1,61 @@
 <!doctype html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Manrope&family=Sunflower:wght@500&display=swap" rel="stylesheet">
-        <meta charset="utf=8">
-       <title>
-           김태원의 삶
-       </title>
-       <style>
-           
-
-        body {
-     margin: 0;
-     background-color: beige;
-     font-family: 'Manrope', sans-serif;
-font-family: 'Black Han Sans', sans-serif;
-font-family: 'Sunflower', sans-serif;
- }
- a {
-     color: black;
-     text-decoration: none;
- }
- h1 {
-     font-size: 45px;
-     font-family: 'Manrope', sans-serif;
-font-family: 'Black Han Sans', sans-serif;
-font-family: 'Sunflower', sans-serif;
-     text-align: center;
-     border-bottom: 3px solid black;
-     background-color: black;
-     margin: 0;
-     padding: 20px;
- }
- ol {
-     font-family: 'Manrope', sans-serif;
-font-family: 'Black Han Sans', sans-serif;
-font-family: 'Sunflower', sans-serif;
-     border-right: 3px solid blue;
-     width: 100px;
-     margin: 0;
-     padding: 20px;
- }
- #grid {
-     display: grid;
-     grid-template-columns: 200px 1fr;
- }
- #grid ol {
-     padding-left:33px;
- }
- #article {
-     padding-left:25px;
- }
- h2 {
-     color: black;
-     font-family: 'Manrope', sans-serif;
-font-family: 'Black Han Sans', sans-serif;
-font-family: 'Sunflower', sans-serif;
- }
- #title {
-     color: yellow;
- }
-
-    </style>
+        <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+              <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Manrope&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+              <meta charset="utf=8">
+             <title>
+                 김태원의 삶
+             </title>
+             <!-- 합쳐지고 최소화된 최신 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      
+      <!-- 부가적인 테마 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+      
+      <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
        </head>
 
     
     <body>
+        <div class = "container">
+            <input id="night_day" type="button" value="night" onclick="
+            nightDayHandler(this);
+          ">
         <h1><a href="index.html" id="title">김태원의 삶!</a></h1>
         <div id="grid">
-            <ul>
+            <ul class="nav nav-pills nav-stacked">
+            
                 <li><a href="1.html">인생의 1막</a></li>
                 <br>
                 <li><a href="2.html">다음을 준비하면서</a></li>
                 <br>
-                <li><a href="3.html">인생의 2막</a></li>
+                <li><a href="3.html" onClick="passWord()">인생의 2막</a></li>
+                <br>
+                <li><a href="4.html">과제하는 건 생각보다 어렵다</a></li>
+                <br>
+                <li><a href="time.html" >시계</a></li>
             </ul>
             <div id="article">
                 <h2>다음을 준비하면서</h2>
                 <p> - 그리고 군대에 갑니다......</p>
+                <input type="button" value="불쌍하십니까?" >
 
     
             </div>
         </div>
+        <div class="panel panel-default">
+            <div class="panel-footer">Made by 김태원</div>
+          </div>
+    </div>
 
 
-
+    <script src = 'pass.js'></script>
 
 
 
